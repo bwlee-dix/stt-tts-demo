@@ -19,6 +19,13 @@ STT & TTS 기능을 **2가지** 방법으로 구현해보았습니다.
 
 ## 중점 구현 부분
 
+- `lib/flutter_screen.dart`: Flutter 패키지 스크린 구현(`speech_to_text`, `flutter_tts`)
+- `lib/native_screen.dart`: Android natvie 스크린 구현
+- `lib/service/native_service.dart`: Android natvie 서비스 구현
+  - `Method Chenel`이용하여 `Kotlin`으로 작성한 함수 연결
+- android/app/src/main/kotlin/com/example/stt_tts_demo/`MainActivity.kt`(네이티브 구현)
+  - `RecognizerIntent`(STT), `TextToSpeech`(TTS)을 이용한 함수 작성
+
 <br>
 
 ## 안드로이드 네이티브 기능 vs Flutter 패키지
