@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              '구현',
+              '구현 해주세요!',
               style: Theme.of(context).textTheme.headlineMedium,
               textAlign: TextAlign.center,
             ),
